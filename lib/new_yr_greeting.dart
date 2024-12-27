@@ -151,11 +151,12 @@ class _NewYrGreetingsState extends State<NewYrGreetings> {
                 builder: (context, constraints) {
                   final size = constraints.maxWidth > 600
                       ? constraints.maxWidth * 0.04
-                      : constraints.maxWidth * 0.03;
+                      : constraints.maxWidth * 0.06;
+
+                  final paddingTop = constraints.maxWidth > 600 ? 300 : 200;
                   return Padding(
-                    padding: constraints.maxWidth > 600
-                        ? const EdgeInsets.only(top: 300.0)
-                        : const EdgeInsets.only(top: 200.0),
+                    padding: 
+                    EdgeInsets.only(top: paddingTop.toDouble()),
                     child: AnimatedTextKit(
                       animatedTexts: [
                         TyperAnimatedText(
