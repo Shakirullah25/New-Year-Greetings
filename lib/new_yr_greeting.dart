@@ -2,7 +2,6 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
-// import 'package:lottie/lottie.dart';
 
 class NewYrGreetings extends StatefulWidget {
   final String title;
